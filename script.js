@@ -55,12 +55,21 @@ function detectSpyCams() {
 const startButton = document.getElementById('startButton');
 startButton.addEventListener('click', () => {
   startCamera();
-  setInterval(() => {
+  let isMonitoring = true;
+
+  function monitorSpyCams() {
+    if (!isMonitoring) {
+      return;
+    }
+
     const isSpyCamDetected = detectSpyCams();
     if (isSpyCamDetected) {
       alert('Spy cam detected! Network security compromised.');
+      isMonitoring = false; // Stop monitoring after detection
     } else {
-      alert('No spy cams detected. Network security intact.');
+      setTimeout(monitorSpyCams, 1000); // Continue monitoring after a delay
     }
-  }, 1000);
+  }
+
+  monitorSpyCams();
 });
