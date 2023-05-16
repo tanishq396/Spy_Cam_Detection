@@ -9,7 +9,10 @@
   <button id="startButton">Start Monitoring</button>
   <div id="cameraContainer">
     <video id="cameraFeed" autoplay playsinline></video>
+    <canvas id="overlay"></canvas>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.9.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
   <script src="script.js"></script>
 </body>
 </html>
