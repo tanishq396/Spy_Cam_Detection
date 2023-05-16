@@ -1,0 +1,11 @@
+#cameraContainer {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+#cameraFeed {
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+}
