@@ -5,12 +5,27 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <h1>Spy Cam Detection</h1>
-  <button id="startButton">Start Monitoring</button>
-  <div id="cameraContainer">
-    <video id="cameraFeed" autoplay playsinline></video>
-    <canvas id="overlay"></canvas>
-  </div>
+  <header>
+    <nav>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <h1>Spy Cam Detection</h1>
+      <div class="container">
+        <div class="video-container">
+          <video id="cameraFeed" autoplay playsinline></video>
+          <canvas id="overlay"></canvas>
+        </div>
+        <button id="startButton">Start Monitoring</button>
+      </div>
+    </section>
+  </main>
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.9.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
   <script src="script.js"></script>
