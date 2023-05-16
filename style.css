@@ -2,10 +2,14 @@
   width: 100%;
   height: auto;
   margin-top: 20px;
+  position: relative;
 }
 
-#cameraFeed {
+#cameraFeed, #overlay {
   width: 100%;
   height: auto;
   border: 1px solid black;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
