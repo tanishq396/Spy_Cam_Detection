@@ -1,9 +1,8 @@
 Project Report: Spy Cam Detection
 
-Contributors - Tanishq Shah, Mahima Sharma, Aditya Inamdar
+Contributors - Tanishq Shah, Mahima Sharma
 
 Table of Contents -
-
 ![image](https://github.com/tanishq396/Spy_Cam_Detection/assets/65888542/8f32f81b-c61d-4c80-88cf-c6490962adeb)
 
 1. Introduction -
